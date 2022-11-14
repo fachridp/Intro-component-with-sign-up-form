@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	background-image: url(../images/bg-intro-mobile.png);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: hsl(0, 100%, 74%);
+	position: relative;
+}
+
+main {
+	max-width: 340px;
+	min-width: 340px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+main section.left {
+	margin: 90px 0 0 0;
+	color: #fff;
+	text-align: center;
+}
+
+main section.left h1 {
+	font-size: 26px;
+}
+
+main section.left p {
+	font-weight: 400;
+	padding: 18px 12px 0 12px;
+}
+
+main section.right {
+	margin: 0 0 60px 0;
+}
+
+main section.right .free-trial {
+	margin: 60px 0 24px 0;
+	padding: 18px 48px;
+	background-color: hsl(248, 32%, 49%);
+	border-radius: 10px;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0px 6px 2px 1px rgba(0, 0, 0, .2);
+}
+
+main section.right .free-trial > p {
+	font-weight: 700;
+	letter-spacing: .02rem;
+}
+
+main section.right .free-trial > p span {
+	font-weight: 400;
+}
+
+main section.right .form-container {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px 1px rgba(0, 0, 0, .2);
+}
+
+main section.right .form-container form {
+	padding: 24px 24px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 18px;
+}
+
+main section.right .form-container form input {
+	width: 100%;
+	padding: 20px;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	border-radius: 6px;
+	border: 1px solid hsl(246, 25%, 77%);
+}
+
+main section.right .form-container form input[type=text]:focus {
+	outline: none;
+	border: 1px solid hsl(248, 32%, 49%);
+}
+
+::placeholder {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+main section.right .form-container form > img {
+	width: 22px;	
+}
+
+main section.right .form-container form .first-name, 
+main section.right .form-container form .last-name,
+main section.right .form-container form .email,
+main section.right .form-container form .password {
+	position: relative;
+}
+
+
+main section.right .form-container form .first-name img, 
+main section.right .form-container form .last-name img, 
+main section.right .form-container form .email img,
+main section.right .form-container form .password img {
+	position: absolute;
+	top: 16px;
+	right: 14px;
+	display: none;
+}
+
+main section.right .form-container form p {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 6px 0 0 0;
+	color: hsl(0, 100%, 74%);
+	text-decoration: italic;
+	text-align: right;
+	display: none;
+}
+
+main section.right .form-container form button {
+	font-size: 15px;
+	font-weight: 400;
+	padding: 22px 34px;
+	background-color: hsl(154, 59%, 51%);
+	border: none;
+	color: #fff;
+	letter-spacing: .1rem;
+	border-radius: 6px;
+	box-shadow: 0 3px 1px 1px rgba(38, 147, 98, 1);
+	cursor: pointer;
+}
+
+main section.right .form-container .terms {
+	width: 264px;
+	margin: 0 auto;
+}
+
+main section.right .form-container .terms p {
+	padding: 0 0 18px 0;
+	font-size: 12px;
+	color: hsl(246, 25%, 77%);
+	font-weight: 600;
+	text-align: center;
+}
+
+main section.right .form-container .terms p span {
+	font-weight: 700;
+	color: hsl(0, 100%, 74%);
+}
+
+@media only screen and (min-width: 500px) {
+	main {
+		max-width: 440px;
+		min-width: 440px;
+	}
+
+	main section.left h1 {
+		font-size: 34px;
+		line-height: 45px;
+	}
+
+	main section.left p {
+		font-size: 21px;
+	}
+
+	main section.right .free-trial p {
+		font-size: 18px;
+		padding: 10px 48px;
+	}
+
+	::placeholder {
+		font-size: 16px;
+	}
+
+	main section.right .form-container form {
+		padding: 34px 32px 18px 32px;
+		gap: 20px;
+	}
+
+	main section.right .form-container form button {
+		font-size: 18px;
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+
+	main section.right .form-container .terms p {
+		line-height: 26px;
+		padding-bottom: 28px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	main {
+		height: 100vh;
+		max-width: 1300px;
+		min-width: 1300px;
+		padding: 0 96px 0 88px;
+		grid-template-columns: 440px 1fr;
+		gap: 120px;
+	}
+
+	main section.left {
+		margin: 0;
+		text-align: left;
+	}
+
+	main section.left h1 {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	main section.left p {
+		width: 560px;
+		font-size: 16px;
+		padding: 34px 0 0 0;
+	}
+
+	main section.right {
+		margin: 0;
+		padding-top: 82px;
+		padding-bottom: 82px;
+	}
+
+	main section.right .free-trial {
+		margin: 0 0 22px 0;
+	}
+
+	main section.right .form-container form {
+		padding: 38px 38px 18px 38px;
+		gap: 20px;
+	}
+
+	main section.right .form-container .terms {
+		width: max-content;
+		padding-bottom: 20px;
+	}
+}
