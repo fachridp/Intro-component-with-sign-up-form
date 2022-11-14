@@ -135,6 +135,19 @@
       validatePassword(inputPassword.value);
       validStatus(inputFirstName.value, inputLastName.value, inputEmail.value, inputPassword.value);
     });
+
+    if (window.innerWidth >= 1300) {
+      document.body.style.backgroundImage = "url('./images/bg-intro-desktop.png')";
+    }
+
+    // if user resize the browser using/in inspect or console
+    window.onresize = function() {
+      if (window.innerWidth >= 1300) {
+        document.body.style.backgroundImage = "url('./images/bg-intro-desktop.png')";
+      } else if (window.innerWidth <= 1300) {
+        document.body.style.backgroundImage = "url('./images/bg-intro-mobile.png')";
+      }
+    }
   </script>
 </body>
 </html>
